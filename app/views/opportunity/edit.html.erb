@@ -1,0 +1,14 @@
+<%=  page_header(:edit,'opportunity',@opportunity)  %>
+<div class='paper'>
+<%= form_for(:opportunity, :url=>{ :action=>'update',:id=>@opportunity.id}) do |f| %>
+   <table>
+   <tr><td>Name <td><%= f.text_field(:name) %>
+   <tr><td>Planned Close Date <td><%= f.date_select(:closing_date_planned) %>
+   <tr><td>Status <td><%= f.text_field(:status) %>   
+   <tr><td>$ Value <td><%= f.text_field(:value) %>   
+   <tr><td>$ Probability <td><%= f.text_field(:probability) %>   
+   <tr><td colspan=2><%= submit_tag('Save') %>
+   </table>
+<% end %>
+</div>
+<%=  page_footer(:edit,'opportunity',@opportunity)  %>

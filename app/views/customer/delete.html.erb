@@ -1,0 +1,13 @@
+<%= page_header(:delete,"customer",@customer) %>
+
+<%= vertical_spacer('20px') %>
+<center>
+Are you sure you want to delete customer <%= @customer.name  %>
+<p> 
+<%= link_to('Yes',:action=>'destroy',:id=>@customer.id)   %>
+<%= link_to('No',:action=>'show',:id=>@customer.id)   %>
+
+<%= vertical_spacer('20px') %>
+</center>
+
+<%= page_footer(:delete,"customer",@customer) %>

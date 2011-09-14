@@ -1,0 +1,13 @@
+<%=  page_header(:delete,'contact',@contact)  %>
+
+<center>
+
+<p>
+Are you sure you want to delete <%=  @contact.firstname + " " + @contact.lastname  %>
+<p>
+<%= link_to('Yes',{:action=>'destroy',:id=>@contact.id}) %>
+<%= link_to('No',{:action=>'show',:id=>@contact.id}) %>
+</p> 
+</center>
+
+<%=  page_footer(:delete,'contact',@contact)  %>

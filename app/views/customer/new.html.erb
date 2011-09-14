@@ -1,0 +1,14 @@
+<%= page_header(:new,"customer",@customer) %>
+
+<%= form_for(:customer, :url => { :action=>'create' })  do |f|  %>
+
+   <table>
+   <tr><td>Name    <td> <%= f.text_field(:name)   %>
+   <tr><td>Address <td> <%= f.text_field(:address)   %>
+   <tr><td>City    <td> <%= f.text_field(:city)   %>
+   <tr><td colspan=2> <%= submit_tag("Save")   %>
+   </table>
+
+<%  end  %>
+
+<%= page_footer(:new,"customer",@customer) %>

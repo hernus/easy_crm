@@ -1,0 +1,22 @@
+<%=  page_header(:menu,'opportunity',@opportunity)  %>
+
+<style type="text/css">
+  .row1 {height:30px;
+  font-size: 12pt;
+  font-weight:bold;
+  color: #555;
+  }
+</style>
+
+<table id=tab1 class=tab1 width=100%>
+  <tr class=row1 onclick=launch("../customer/list")> <td> Customers
+  <tr class=row1 onclick=launch("../customer/list")> <td> Contacts
+  <tr class=row1 onclick=launch("../customer/list")> <td> Opportunities
+</table>
+
+<%=  page_footer(:menu,'opportunity',@opportunity)  %>
+
+
+<script type='text/javascript'>
+  function launch(url) {window.location.assign(url)}
+</script>

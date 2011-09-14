@@ -1,0 +1,26 @@
+<table>
+<TR><TD>table</TD>
+<TD>schema_migrations</TD>
+<TD>schema_migrations</TD>
+<TD>2</TD>
+<TD>CREATE TABLE &quot;schema_migrations&quot; (&quot;version&quot; varchar(255) NOT NULL)</TD>
+</TR>
+<TR><TD>index</TD>
+<TD>unique_schema_migrations</TD>
+<TD>schema_migrations</TD>
+<TD>3</TD>
+<TD>CREATE UNIQUE INDEX &quot;unique_schema_migrations&quot; ON &quot;schema_migrations&quot; (&quot;version&quot;)</TD>
+</TR>
+<TR><TD>table</TD>
+<TD>customers</TD>
+<TD>customers</TD>
+<TD>4</TD>
+<TD>CREATE TABLE &quot;customers&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;Name&quot; varchar(255), &quot;City&quot; varchar(30), &quot;user_id&quot; integer, &quot;address&quot; varchar(100), &quot;created_at&quot; datetime, &quot;updated_at&quot; datetime)</TD>
+</TR>
+<TR><TD>table</TD>
+<TD>sqlite_sequence</TD>
+<TD>sqlite_sequence</TD>
+<TD>5</TD>
+<TD>CREATE TABLE sqlite_sequence(name,seq)</TD>
+</TR>
+</table>

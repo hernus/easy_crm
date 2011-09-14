@@ -1,0 +1,62 @@
+body { font-family: arial; 
+background-color:#aaa;
+background-image:url('/images/bg0.png');
+background-repeat:repeat-x;
+font-size:10pt; 
+}
+.paper { 
+  background-color:white;
+  padding:0px; 
+  border-top:1px solid silver;
+  border-bottom:1px solid silver 
+ }
+ 
+ .topmenu{
+   margin:0;
+   padding:0;
+   color: silver;
+ }
+ .topmenulink{
+  color:silver;
+  text-decoration:none;
+ }
+ .topmenulink:hover{
+  text-decoration:underline;
+ } 
+ 
+ .menu{
+   background-image:url('/images/bg1.png');
+   padding:0 10px;
+   margin:0;
+   font-size:8pt;
+   height:13pt;
+ }
+ .outer{
+    margin:20px 80px;
+ }
+ 
+ a.av1{
+      text-decoration:none;
+	  color:black;
+ }
+ 
+ a.av1:hover{
+      text-decoration:underline;
+	  color:black;
+ } 
+ 
+ .tab1 {border-collapse:collapse
+ }
+ 
+ .tab1 td,th {padding:2px 10px}
+
+ .tab1 th {text-align:left;
+         background-color:silver;
+		 color: white
+		 }
+ 
+ .row1:hover {
+   background-color:#aca; 
+   cursor:pointer
+ }
+ 

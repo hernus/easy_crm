@@ -1,0 +1,12 @@
+<%= page_header(:list,"customer","") %>
+
+<table id=tab1 class=tab1 width='100%'>
+<%  @customers.each do |c|    %>
+  <%=  "<tr class=row1 onclick=shownow(#{c.id})>".html_safe  %>
+   <td> <%= c.name %>
+<%  end  %>
+</table>
+
+<%= page_footer(:list,"customer","") %>
+
+

@@ -1,0 +1,17 @@
+<%=  page_header(:edit,'contact',@contact)  %>
+<%= form_for(:contact, :url => {:action=>'update', :id=>@contact.id}) do |f|%>
+<br> &nbsp
+<br>
+<table>
+<tr><td>First Name<td><%= f.text_field(:firstname) %>
+<tr><td>Last Name <td><%= f.text_field(:lastname) %>
+<tr><td>Gender <td><%= f.text_field(:gender) %>
+<tr><td>Mobile Phone <td><%= f.text_field(:mobile) %>
+<tr><td>Email Address <td><%= f.text_field(:email) %>
+<tr><td>Date of birth <td><%= f.date_select(:birthdate) %>
+<tr><td colspan=2> <%= submit_tag('Save') %>
+</table>
+<br> &nbsp
+<% end %>
+
+<%=  page_footer(:edit,'contact',@contact)  %>

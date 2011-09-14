@@ -1,0 +1,16 @@
+<%=  page_header(:new,'contact',@contact)  %>
+
+<p>
+<%= form_for(:contact, :url => {:action=>'create'}) do |f|%>
+<table>
+<tr><td>First Name<td><%= f.text_field(:firstname) %>
+<tr><td>Last Name <td><%= f.text_field(:lastname) %>
+<tr><td>Gender <td><%= f.text_field(:gender) %>
+<tr><td>Mobile Phone <td><%= f.text_field(:mobile) %>
+<tr><td>Email Address <td><%= f.text_field(:email) %>
+<tr><td colspan=2> <%= submit_tag('Save') %>
+</table>
+
+<% end %>
+
+<%=  page_footer(:new,'contact',@contact)  %>

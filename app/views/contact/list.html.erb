@@ -1,0 +1,29 @@
+<%=  page_header(:list,'contact','')  %>
+
+<% fullname = "" %>
+
+
+
+<table id=tab1 class=tab1 width=100%>
+<tr><th>Name
+
+<% 
+@contacts.each do |contact|  
+fullname = contact.firstname + " " + contact.lastname
+%>
+
+  <%=  "<tr class=row1 onclick=shownow(#{contact.id})>".html_safe  %>
+  <td> <%= fullname %>
+
+  <% end  %>
+
+</table>
+
+<%=  page_footer(:list,'contact','')  %>
+
+
+<script type="text/javascript">
+  rows = document.getElementById('tab1').getElementsByTagName('tr');
+  var flag = false;
+  for (var i=0; i<rows.length; i++){ flag=!flag; rows[i].bgColor=flag?"eeeeee":"white"}
+</script>

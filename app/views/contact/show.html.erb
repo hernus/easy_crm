@@ -1,0 +1,12 @@
+<%=  page_header(:show,'contact',@contact)  %>
+
+<table id=tab1 class=tab1 width=100%>
+<tr><td width=25%>Full Name<td width=25%><%=@fullname%><td>
+<tr><td>Mobile No<td><%=@contact.mobile%><td>
+<tr><td>Gender<td><%=@contact.gender%><td>
+<tr><td>Date of Birth<td><%=@contact.birthdate%><td>
+<tr><td>Email<td><%=@contact.email%><td>
+
+</table>
+
+<%=  page_footer(:show,'contact',@contact)  %>

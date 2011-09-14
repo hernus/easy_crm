@@ -1,0 +1,9 @@
+<%= page_header(:show,"customer",@customer) %>
+
+<table border=0 width=100% id=tab1 class=tab1>
+<tr>
+<td width=25%>Customer Name<td width=25%><%= @customer.name   %><td>
+<tr><td>Address<td><%= @customer.address   %><td>
+</table>
+
+<%= page_footer(:show,"customer",@customer) %>

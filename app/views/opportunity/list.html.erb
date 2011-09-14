@@ -1,0 +1,15 @@
+<%=  page_header(:list,'opportunity','')  %>
+
+  <table id="tab1" class=tab1 width=100%>
+  <tr><th>Opportunity <th> Close Date
+  <% @opportunities.each do |opp|   %>
+  <%=    "<tr class=row1 onclick=shownow(#{opp.id})>".html_safe  %>
+  <td> <%= opp.name  %>
+  <td> <%=  opp.closing_date_planned   %>
+
+  <% end    %>
+  </table>
+
+<%=  page_footer(:list,'opportunity','')  %>
+
+

@@ -1,0 +1,11 @@
+<%=  page_header(:show,'opportunity',@opportunity)  %>
+
+   <table id=tab1 class=tab1 width=100%>
+   <tr><td width=25%>Name <td width=25%><%= @opportunity.name %><td>
+   <tr><td>Planned Close Date <td><%= @opportunity.closing_date_planned %><td>
+   <tr><td>Status <td><%= @opportunity.status %><td>   
+   <tr><td>$ Value <td><%= @opportunity.value %><td>   
+   <tr><td>$ Probability <td><%= @opportunity.probability %><td>   
+   </table>
+
+<%=  page_footer(:show,'opportunity',@opportunity)  %>

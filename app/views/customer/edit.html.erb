@@ -1,0 +1,18 @@
+<%= page_header(:edit,"customer",@customer) %>
+
+<%=  form_for(:customer,:url=>{:action=>'update',:id=>@customer.id}) do |f|  %>
+<table border=0>
+<tr>
+<td>
+Customer Name
+<td>
+<%= f.text_field(:name)   %>
+<tr><td>
+Address
+<td>
+<%= f.text_field(:address) %>
+<tr><td colspan=2> <%= submit_tag("Save") %>
+</table>
+<% end    %>
+
+<%= page_footer(:edit,"customer",@customer) %>
